@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fHNhbGVzfGVufDB8fHx8MTY0Nzk5Mjk3Mg&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: #ffffff; /* White container background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center align text */
+            max-width: 600px; /* Limit maximum width */
+            width: 80%; /* Take 80% of the available width */
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 36px; /* Larger heading font size */
+        }
+        .result {
+            margin-top: 30px;
+            font-size: 24px; /* Larger result font size */
+        }
+        a {
+            display: block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px; /* Larger link font size */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result">
+            <h2>Predicted Sales: {{ prediction }}</h2>
+        </div>
+        <a href="/">Back to Prediction Form</a> <!-- Optional: Add a link to go back to the prediction form -->
+    </div>
+</body>
+</html>
